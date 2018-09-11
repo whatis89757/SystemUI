@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/show_hide_status_icon_title"
+        android:textSize="16sp"
+        android:textColor="@color/status_icon_manager_title"
+        android:singleLine="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:columnCount="3"
+            android:orientation="horizontal">
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/alarm"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_alarm"
+                app:status_icon_active="@drawable/ic_alarm_active"
+                app:status_labelText="@string/status_bar_alarm" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/airplane"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_airplanemode_active"
+                app:status_icon_active="@drawable/ic_airplanemode"
+                app:status_labelText="@string/status_bar_airplane" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/rotate"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_screen_rotation"
+                app:status_icon_active="@drawable/ic_screen_rotation_active"
+                app:status_labelText="@string/quick_settings_rotation_unlocked_label" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/battery"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_battery_full"
+                app:status_icon_active="@drawable/ic_battery_active"
+                app:status_labelText="@string/battery" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/bluetooth"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_bluetooth"
+                app:status_icon_active="@drawable/ic_bluetooth_active"
+                app:status_labelText="@string/quick_settings_bluetooth_label" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/cast"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_cast"
+                app:status_icon_active="@drawable/ic_cast_active"
+                app:status_labelText="@string/quick_settings_cast_title" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/dnd"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_do_not_disturb"
+                app:status_icon_active="@drawable/ic_do_not_disturb_active"
+                app:status_labelText="@string/quick_settings_dnd_label" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/ethernet"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_ethernet"
+                app:status_icon_active="@drawable/ic_ethernet_active"
+                app:status_labelText="@string/status_bar_ethernet" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/headset"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_tuner_headset"
+                app:status_icon_active="@drawable/ic_headset_active"
+                app:status_labelText="@string/headset" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/hotspot"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_tuner_hotspot"
+                app:status_icon_active="@drawable/ic_hotspot_active"
+                app:status_labelText="@string/quick_settings_hotspot_label" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/mobile"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_mobiledata"
+                app:status_icon_active="@drawable/ic_mobiledata_active"
+                app:status_labelText="@string/status_bar_mobile_network" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/time"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_time"
+                app:status_icon_active="@drawable/ic_time_active"
+                app:status_labelText="@string/tuner_time" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/volume"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_volume_up"
+                app:status_icon_active="@drawable/ic_volume_up_active"
+                app:status_labelText="@*android:string/volume_unknown" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/wifi"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_wifi"
+                app:status_icon_active="@drawable/ic_wifi_active"
+                app:status_labelText="@string/quick_settings_wifi_label" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/work_profile"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_work"
+                app:status_icon_active="@drawable/ic_work_active"
+                app:status_labelText="@string/status_bar_work" />
+
+            <com.android.systemui.tuner.ClickableIcon
+                android:id="@+id/volte"
+                android:layout_width="@dimen/status_icon_tuner_width"
+                android:layout_height="@dimen/status_icon_tuner_height"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/status_icon_top_margin"
+                android:layout_marginBottom="24dp"
+                android:enabled="true"
+                android:gravity="center"
+                app:status_icon="@drawable/ic_mobiledata"
+                app:status_icon_active="@drawable/ic_mobiledata_active"
+                app:status_labelText="@string/status_bar_ims" />
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

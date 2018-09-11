@@ -1,0 +1,27 @@
+<!--
+Copyright (C) 2015 The Android Open Source Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+    <path
+        android:pathData="M10,16L14,16C14.55,16 15,15.55 15,15L15,12C15,11.45 14.55,11 14,11L14,10C14,8.89 13.1,8 12,8C10.89,8 10,8.9 10,10L10,11C9.45,11 9,11.45 9,12L9,15C9,15.55 9.45,16 10,16L10,16ZM10.8,10C10.8,9.34 11.34,8.8 12,8.8C12.66,8.8 13.2,9.34 13.2,10L13.2,11L10.8,11L10.8,10L10.8,10ZM17,1L7,1C5.9,1 5,1.9 5,3L5,21C5,22.1 5.9,23 7,23L17,23C18.1,23 19,22.1 19,21L19,3C19,1.9 18.1,1 17,1L17,1ZM17,19L7,19L7,5L17,5L17,19L17,19Z"
+        android:strokeColor="#00000000"
+        android:fillType="evenOdd"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="1"/>
+</vector>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:clickable="false">
+
+
+    <TextView
+        android:id="@+id/layout_prefernce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:height="24dp"
+        android:lineSpacingMultiplier="1.50"
+        android:text="Layout Preference"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingStart="72dp"/>
+
+    <RelativeLayout
+        android:id="@+id/bhr_layout_preference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_prefernce"
+        android:clickable="true"
+        android:paddingStart="72dp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/back_home_recents"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_home_recents" />
+
+        <RadioButton
+            android:id="@+id/back_home_recents_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:clickable="false"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rhb_layout_preference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bhr_layout_preference"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:paddingStart="72dp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/recents_home_back"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/recents_home_back" />
+
+        <RadioButton
+            android:id="@+id/recents_home_back_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:clickable="false"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rhb_layout_preference"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/wifi_divider" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--***************************************************************
+ * Copyright ©  Smartron India pvt ltd. 2018 - All Rights Reserved
+ ******************************************************************
+ -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:title="@string/led_settings_title">
+
+    <PreferenceCategory
+        android:title="@string/led_battery_category_title">
+
+        <com.android.settings.colorpicker.ColorDialogPreference
+            android:key="full_battery_led_light"
+            android:title="@string/full_battery_led_title"
+            android:summary="@string/full_battery_led_summary"/>
+
+        <com.android.settings.colorpicker.ColorDialogPreference
+            android:key="medium_battery_led_light"
+            android:title="@string/medium_battery_led_title"
+            android:summary="@string/medium_battery_led_summary"/>
+
+        <com.android.settings.colorpicker.ColorDialogPreference
+            android:key="low_battery_led_light"
+            android:title="@string/low_battery_led_title"
+            android:summary="@string/low_battery_led_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+    <com.android.settings.colorpicker.ColorDialogPreference
+            android:key="notification_led_light"
+            android:title="@string/other_colors"
+            android:summary="@string/notification_led_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

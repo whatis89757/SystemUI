@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2014, The Linux Foundation. All rights reserved.
+-->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#80cccccc">
+    <shape android:shape="rectangle">
+        <!-- Use the solid tag to define the background color you want -->
+        <solid android:color="#80cccccc"/>
+    </shape>
+</ripple>

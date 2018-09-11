@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/system_layout"
+                android:layout_height="120dp" >
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/current_tone"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/system_ringtone"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/system_tone"
+                    android:textColor="@color/ringtone_summary_color"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@+id/current_tone"
+                    android:text="@string/system_ringtone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/system_tone"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/apply_sim_layout"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/apply_checkbox_other_sim"/>
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/apply_to_other_sim"
+                        android:textColor="@color/black"
+                        android:text="@string/apply_the_same_to_first_sim"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"
+                android:layout_below="@id/system_layout"
+                android:id="@+id/divider_1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:id="@+id/system_tone_layout"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/divider_1"
+                android:layout_marginTop="18dp"
+                android:layout_height="@dimen/list_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/system_tone"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/settings_color_accent"
+                    android:text="@string/system_ringtone"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="34dp"
+                    android:id="@android:id/list"
+                    android:layout_weight="1"
+                    android:nestedScrollingEnabled="true"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="8dp"
+                    android:choiceMode="singleChoice" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="1dip" >
+
+        <View style="@style/Divider"
+            android:id="@+id/divider_2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/cancel"
+            android:text="@string/select_ringtone_cancel"
+            android:textColor="@color/settings_color_accent"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_below="@id/divider_2"
+            android:layout_toStartOf="@+id/set_ringtone"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/text_press_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/set_ringtone"
+            android:text="@string/set_select_ringtone"
+            android:textColor="@color/settings_color_accent"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_alignTop="@+id/cancel"
+            android:layout_alignEnd="@+id/divider_2"
+            android:background="@drawable/text_press_bg"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

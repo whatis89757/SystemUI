@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--***************************************************************
+ * Copyright ©  Smartron India pvt ltd. 2018 - All Rights Reserved
+ ******************************************************************
+ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/default_value"
+            android:textColor="@color/color_dialog_fragment_sub_title"
+            android:textSize="16sp" />
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp">
+
+            <ImageView
+                android:id="@+id/default_color_view"
+                android:layout_width="@dimen/color_grid_circle_size"
+                android:layout_height="@dimen/color_grid_circle_size"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/other_colors"
+            android:textColor="@color/color_dialog_fragment_sub_title"
+            android:textSize="16sp" />
+
+        <GridLayout
+            android:id="@+id/color_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2017 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/gesture_preference_title" >
+
+    <!-- Assist Gesture Settings -->
+    <Preference
+        android:key="gesture_assist_input_summary"
+        android:title="@string/assist_gesture_title"
+        android:fragment="com.android.settings.gestures.AssistGestureSettings" />
+
+    <!-- Swipedown Notification -->
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_swipe_down_fingerprint_video"
+        app:animation="@raw/gesture_fingerprint_swipe"
+        app:preview="@drawable/gesture_fingerprint_swipe"/>
+
+    <SwitchPreference
+        android:key="gesture_swipe_down_fingerprint"
+        android:title="@string/fingerprint_swipe_for_notifications_title"
+        android:summary="@string/fingerprint_swipe_for_notifications_summary"/>
+
+    <!-- Gesture double twist -->
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_double_twist_video"
+        app:animation="@raw/gesture_twist"
+        app:preview="@drawable/gesture_twist"/>
+
+    <SwitchPreference
+        android:key="gesture_double_twist"
+        android:title="@string/double_twist_for_camera_mode_title"
+        android:summary="@string/double_twist_for_camera_mode_summary"/>
+
+    <!-- Gesture double tap power -->
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_double_tap_power_video"
+        app:animation="@raw/gesture_double_tap"
+        app:preview="@drawable/gesture_double_tap"/>
+
+    <SwitchPreference
+        android:key="gesture_double_tap_power"
+        android:title="@string/double_tap_power_for_camera_title"
+        android:summary="@string/double_tap_power_for_camera_summary"/>
+
+    <!-- Gesture fingerprint lock device-->
+    <ListPreference
+        android:key="gesture_fingerprint_lock"
+        android:title="@string/fingerprint_lock_device"
+        android:entries="@array/fingerprint_lock_entries"
+        android:entryValues="@array/fingerprint_lock_values"
+        android:summary="%s"
+        android:defaultValue="2"/>
+
+    <!-- Gesture display pick up -->
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_pick_up_video"
+        app:animation="@raw/gesture_ambient_lift"
+        app:preview="@drawable/gesture_ambient_lift"/>
+
+    <SwitchPreference
+        android:key="gesture_pick_up"
+        android:title="@string/ambient_display_pickup_title"
+        android:summary="@string/ambient_display_pickup_summary"/>
+
+    <!-- Gesture double tap screen -->
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_double_tap_screen_video"
+        app:animation="@raw/gesture_ambient_tap"
+        app:preview="@drawable/gesture_ambient_tap"/>
+
+    <SwitchPreference
+        android:key="gesture_double_tap_screen"
+        android:title="@string/ambient_display_title"
+        android:summary="@string/ambient_display_summary"/>
+
+    <!-- Gesture three finger screenshot -->
+    <SwitchPreference
+        android:key="gesture_three_finger_screenshot"
+        android:title="@string/three_finger_screenshot_title"
+        android:summary="@string/three_finger_screenshot_summary" />
+
+    <!-- Gesture wake with fingerprint -->
+    <SwitchPreference
+        android:key="gesture_fingerprint_wake"
+        android:title="@string/fingerprint_wake"
+        android:summary="@string/fingerprint_wake_summary" />
+
+    <!-- Gesture Flip to Mute incoming call -->
+    <SwitchPreference
+        android:key="gesture_flip_to_mute"
+        android:title="@string/flip_to_mute"
+        android:summary="@string/flip_to_mute_summary" />
+
+    <!-- Gesture pick device to dial/answer call -->
+    <SwitchPreference
+        android:key="gesture_Pick_up_call"
+        android:title="@string/pick_up_call"
+        android:summary="@string/pick_up_call_summary" />
+
+    <PreferenceCategory
+
+        android:title="@string/on_screen_gestures_category">
+
+        <!-- Double tap screen to wake device  -->
+        <SwitchPreference
+            android:key="double_tap_device_screen_to_wake"
+            android:title="@string/double_tap_to_wake_up"
+            android:summary="@string/double_tap_to_wake_up_summary" />
+
+        <!-- Draw "C" on screen to open Camera  -->
+        <SwitchPreference
+            android:key="draw_screen_overlay_c"
+            android:title="@string/draw_screen_overlay_title"
+            android:summary="@string/draw_screen_overlay_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
